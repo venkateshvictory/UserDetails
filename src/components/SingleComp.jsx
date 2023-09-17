@@ -3,7 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 
 const SingleComp = ({ data }) => {
   const location = useLocation();
+  console.log(location.state)
   const userId = location.state;
+ 
   const getFilteredIds = data.filter(
     (item) => item.userId === userId || item.postId === userId
   );

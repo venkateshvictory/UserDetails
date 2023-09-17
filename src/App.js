@@ -21,7 +21,7 @@ function App() {
       console.log(error);
     }
   };
-
+  // assign a data into users variable :using useState array
   useEffect(() => {
     const getUsers = async () => {
       const data = await fetchData(
